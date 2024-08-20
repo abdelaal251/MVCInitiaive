@@ -1,32 +1,46 @@
-# Prerequisites
-*.d
+# Ignore build output
+bin/
+obj/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Ignore user-specific files
+*.user
+*.suo
+.vscode/
+.vs/
+.idea/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Ignore sensitive information
+appsettings.json
+appsettings.*.json
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Ignore Entity Framework Migrations folder (optional)
+#migrations/
 
-# Fortran module files
-*.mod
-*.smod
+# Ignore any local development logs
+*.log
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Ignore package directories
+node_modules/
+wwwroot/lib/
 
-# Executables
-*.exe
-*.out
-*.app
+# Ignore Rider files
+.idea/
+*.sln.iml
+
+# MacOS files
+.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# Ignore coverage tool output
+coverage/
+*.lcov
+
+# Ignore npm packages
+package-lock.json
+yarn.lock
+
+# Ignore generated files
+dist/
+out/
