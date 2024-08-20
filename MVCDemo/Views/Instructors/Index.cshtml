@@ -1,0 +1,29 @@
+@model IEnumerable<MVCDemo.Models.Instructor>
+
+<h2>Instructors</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Department</th>
+            <th>Course</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var instructor in Model)
+    {
+        <tr>
+            <td>@instructor.Name</td>
+            <td>@instructor.Salary.ToString("C")</td>
+            <td>@instructor.Department.Name</td>
+            <td>@instructor.Course.Name</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@instructor.Id" class="btn btn-primary">Details</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
