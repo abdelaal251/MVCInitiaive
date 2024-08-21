@@ -1,0 +1,69 @@
+@model MVCDemo.Models.Instructor
+
+<h2>@ViewContext.RouteData.Values["action"] Instructor</h2>
+
+<form asp-action="@ViewContext.RouteData.Values["action"]" method="post" onsubmit="logFormData(event)">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" id="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Image" class="control-label"></label>
+        <input asp-for="Image" class="form-control" id="Image" />
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Salary" class="control-label"></label>
+        <input asp-for="Salary" class="form-control" id="Salary" />
+        <span asp-validation-for="Salary" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Address" class="control-label"></label>
+        <input asp-for="Address" class="form-control" id="Address" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DeptId" class="control-label"></label>
+        <select asp-for="DeptId" class="form-control" asp-items="ViewBag.DeptId" id="DeptId"></select>
+        <span asp-validation-for="DeptId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CourseId" class="control-label"></label>
+        <select asp-for="CourseId" class="form-control" asp-items="ViewBag.CourseId" id="CourseId"></select>
+        <span asp-validation-for="CourseId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>
+
+<script>
+    function logFormData(event) {
+        // Prevent form submission to log the data first
+        event.preventDefault();
+        
+        // Capture form data
+        const formData = {
+            Name: document.getElementById('Name').value,
+            Image: document.getElementById('Image').value,
+            Salary: document.getElementById('Salary').value,
+            Address: document.getElementById('Address').value,
+            DeptId: document.getElementById('DeptId').value,
+            CourseId: document.getElementById('CourseId').value
+        };
+
+        // Log form data to the console
+        console.log('Form Data:', formData);
+
+        // Submit the form after logging the data
+        event.target.submit();
+    }
+</script>

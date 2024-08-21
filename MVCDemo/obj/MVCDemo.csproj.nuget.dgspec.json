@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WORK\\MVCInitiaive\\MVCDemo\\MVCDemo.csproj": {}
+    "d:\\WORK\\MVCInitiaive\\MVCDemo\\MVCDemo.csproj": {}
   },
   "projects": {
-    "D:\\WORK\\MVCInitiaive\\MVCDemo\\MVCDemo.csproj": {
+    "d:\\WORK\\MVCInitiaive\\MVCDemo\\MVCDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WORK\\MVCInitiaive\\MVCDemo\\MVCDemo.csproj",
+        "projectUniqueName": "d:\\WORK\\MVCInitiaive\\MVCDemo\\MVCDemo.csproj",
         "projectName": "MVCDemo",
-        "projectPath": "D:\\WORK\\MVCInitiaive\\MVCDemo\\MVCDemo.csproj",
+        "projectPath": "d:\\WORK\\MVCInitiaive\\MVCDemo\\MVCDemo.csproj",
         "packagesPath": "C:\\Users\\Ahmed Abdelaal\\.nuget\\packages\\",
-        "outputPath": "D:\\WORK\\MVCInitiaive\\MVCDemo\\obj\\",
+        "outputPath": "d:\\WORK\\MVCInitiaive\\MVCDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ahmed Abdelaal\\AppData\\Roaming\\NuGet\\NuGet.Config",
